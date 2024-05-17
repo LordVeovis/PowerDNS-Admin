@@ -159,7 +159,7 @@ class SAML(object):
             'digestAlgorithm'] = 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256'
         settings['security']['metadataCacheDuration'] = None
         settings['security']['metadataValidUntil'] = None
-        settings['security']['requestedAuthnContext'] = True
+        settings['security']['requestedAuthnContext'] = False
         settings['security'][
             'signatureAlgorithm'] = 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256'
         settings['security']['wantAssertionsEncrypted'] = current_app.config.get(
